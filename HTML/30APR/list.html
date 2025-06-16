@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>List</title>
+    <style>
+        h1{
+            color:tomato;
+        }
+    </style>
+</head>
+<body style="color:dodgerblue">
+   <!--
+        1.unordered list : ul,li
+        2. ordered list : ol,li
+        3. definition list: dl, dt(data term), dd(data definition)
+        
+        attributes : start=always number , reversed= reverses the order of the ordered list , type=(square,circle,disc,none) for unordered and (A,a,I,i) for unordered
+    -->
+        <a href="#NL" style="text-decoration: none;">Jump to nested list </a>
+        <hr>
+        <h1>Unordered List</h1>
+        <ul type="square">
+            <li>Apple </li>
+            <li>Ball</li>
+            <li>Cat</li>
+            <li>Donkey</li>
+        </ul>
+
+
+        <h1>Ordered List</h1>
+        <ol type="A">
+            <li>Apple </li>
+            <li>Ball</li>
+            <li>Cat</li>
+            <li>Donkey</li>
+        </ol>
+
+        <h1>Definition List</h1>
+        <dl>
+            <dt>WEB</dt>
+            <dd>It connects the gap between students and web</dd>
+        </dl><hr>
+
+        <h1 id="NL">Nested List</h1>
+        <ol>
+            <li>NCIT</li>
+            <ol type="a">
+                <li>IT</li>
+                <ul type="disc">
+                    <li>First Sem</li>
+                     <ol type="i">
+                        <li>EDC</li>
+                            <ul type="square">
+                                <li>Theory</li>
+                                <li>Practical</li>
+                            </ul>
+                        <li>BEE</li>
+                        <li>Calculus I</li>
+                            <ul type="square">
+                                <li>Theory</li>
+                            </ul>
+                        <li>PST</li>
+                        <li>C programming</li>
+                     </ol>
+                     <li>Second Sem</li>
+                     <ol type="i">
+                        <li>Calculus 2</li>
+                     </ol>
+                </ul>
+                <li>Software</li>
+                    <ul type="disc">
+                        <li>First Semesters</li>
+                            <ol type="i">
+                                <li>Sample Subject</li>
+                                    <ul type="square">
+                                        <li>Theory</li>
+                                        <li>Practical</li>
+                                    </ul>
+                                <li>Sample Subject</li>
+                                <li>Sample Subject</li>
+                                <li>Sample Subject</li>
+                                <li>Sample Subject</li>
+                            </ol>
+                        <li>Second Semesters</li>
+                        <li>Third Semesters</li>
+                    </ul>
+                <li>Civil</li>
+                <li>BCA</li>
+            </ol><hr>
+            <li>Cosmos</li>
+            <li>Everest</li>
+        </ol>
+</body>
+</html>

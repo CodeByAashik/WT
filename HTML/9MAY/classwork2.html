@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admission Form</title>
+    <style>
+        body {
+            background-image: url(https://ncit.edu.np/storage/photo/cover/zFftaidnVWvw2kEaawbaQr3v9RGV2k7n7htCHaPQ.jpg);
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: rgba(239, 181, 226, 0.8);
+            padding: 30px;
+            border-radius: 12px;
+            width: 350px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="file"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 6px;
+        }
+
+        .form-group {
+            margin-bottom: 12px;
+        }
+
+        .form-group-inline {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Admission Form</h1>
+
+        <label>First Name:</label>
+        <input type="text" value="Aashik">
+
+        <label>Last Name:</label>
+        <input type="text" value="Thakur">
+
+        <label>Email:</label>
+        <input type="email">
+
+        <label>Password:</label>
+        <input type="password">
+
+        <label>Date of Birth:</label>
+        <input type="date">
+
+        <label>Contact:</label>
+        <input type="tel" placeholder="Eg.977-0123456789">
+
+        <label>State:</label>
+        <input type="text" disabled>
+
+        <label>Photo:</label>
+        <input type="file" accept="image/*">
+
+        <div class="form-group">
+            <label>Gender:</label>
+            <div class="form-group-inline">
+                <label><input type="radio" name="Gender">Male</label>
+                <label><input type="radio" name="Gender">Female</label>
+                <label><input type="radio" name="Gender">Other</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Faculty:</label>
+            <div class="form-group-inline">
+                <label><input type="radio" name="Faculty">BCA</label>
+                <label><input type="radio" name="Faculty">BBS</label>
+                <label><input type="radio" name="Faculty">+2</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Hobby:</label>
+            <div class="form-group-inline">
+                <label><input type="checkbox" checked>Cricket</label>
+                <label><input type="checkbox">Music</label>
+                <label><input type="checkbox">Football</label>
+            </div>
+        </div>
+
+        <label>Nationality:</label>
+        <select>
+            <option value="">Nepali</option>
+            <option value="">Indian</option>
+            <option value="">Australian</option>
+            <option value="">American</option>
+        </select>
+
+        <label>Message:</label>
+        <textarea rows="4" cols="25"></textarea>
+
+        <div class="form-group">
+            <label>Terms & Conditions:</label>
+            <div class="form-group-inline">
+                <label><input type="radio" name="tc">I Agree</label>
+                <label><input type="radio" name="tc">I Don't Agree</label>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <input type="submit" value="SignUp">
+            <input type="reset" value="Clear">
+        </div>
+    </form>
+</body>
+</html>

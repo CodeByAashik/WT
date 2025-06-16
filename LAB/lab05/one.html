@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background-image: url(/college.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            gap: 20vw;        
+        }
+
+        .left{
+            background-color: rgba(0, 128, 0, 0.522);
+            height: 300px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+        }
+
+        .left form{
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+
+        .inputs{
+            margin-bottom: 10px;
+        }
+
+        .left a{
+            margin-left: 60px;
+        }
+
+        .right{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgba(0, 128, 0, 0.522);
+            /* height: 300px;
+            width: 500px; */
+            padding: 50px 10px;
+            top: 35px;
+            color: white;
+
+        }
+
+        .right h1{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        tr{
+            height: 30px;
+        }
+
+        td:nth-child(1){
+           padding-right: 100px;
+        }
+
+        tr:nth-child(15){
+            position: relative;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h3>Login Form</h3> <br><br>
+            <form action="">
+                <div class="inputs">
+                Username:
+                <input type="text" name="" id=""> <br><br>
+                password:
+                <input type="password" name="" id=""> <br>
+                </div>
+                
+
+                <a href="#">Forgot Password?</a>
+            </form>
+        </div>
+
+        <div class="right">
+            <h1>Admissinon Form</h1>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>First Name</td>
+                        <td><input type="text" name="" value="aashik" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input type="text" name="" value==Thakur id=""></td>
+                    </tr>
+
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="" placeholder="Ef : abcked" id=""></td>
+                    </tr>
+
+                    <tr>
+                        <td>DOB</td>
+                        <td><input type="date" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                        <td>contact no.</td>
+                        <td><input type="tel" name="" id="" placeholder="Eg:989898989898"></td>
+                    </tr>
+
+                    <tr>
+                        <td>State</td>
+                        <td><input type="text" name="" disabled id=""></td>
+                    </tr>
+
+                    <tr>
+                        <td>Photo</td>
+                        <td><input type="file" name="" id="" accept="/Image"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio" name="gender" id="">Male 
+                            <input type="radio" name="gender" id="">Female
+                            <input type="radio" name="gender" id="">Others
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Faculty</td>
+                        <td>
+                            <input type="radio" name="faculty" id="">BCA 
+                            <input type="radio" name="faculty" id="">BBS
+                            <input type="radio" name="faculty" id="">+2
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Hobbies</td>
+                        <td>
+                            <input type="checkbox" name="" id="">Music
+                            <input type="checkbox" name="" id="">Travel
+                            <input type="checkbox" name="" id="">Reading Books
+                        </td>
+                    </tr>
+
+                    <td>Nationality</td>
+                    <td>
+                        <select>
+                            <option value="">Nepal</option>
+                            <option value="">India</option>
+                            <option value="">China</option>
+                            <option value="">Kathmandu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Messgae</td>
+                    <td><textarea name="" id="" rows="4" cols="30"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Terms & Condition</td>
+                    <td>
+                        <input type="radio" name="" id="">I agree
+                        <input type="radio" name="" id="">I Disagree
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center"><button>Sign Up</button>
+                <button>Clear</button></td>
+                </tr>
+            </table>
+               
+                </table>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>

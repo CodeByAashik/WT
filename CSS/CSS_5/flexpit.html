@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Gallery</title>
+    <style>
+        .images {
+            display: flex;
+            aspect-ratio: 5 / 2;
+            gap: 0.6rem;
+        }
+
+        .image {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex: 1 1 0;
+            transition: flex 0.2s ease-in-out;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .image:hover {
+            flex: 2;
+        }
+
+        .image1 { background-image: url(../11.jpg); }
+        .image2 { background-image: url(../22.jpg); }
+        .image3 { background-image: url(../33.jpg); }
+        .image4 { background-image: url(../44.jpg); }
+        .image5 { background-image: url(../55.jpg); }
+    </style>
+</head>
+<body>
+    <div class="images">
+        <div class="image image1">AI</div>
+        <div class="image image2">Image 2</div>
+        <div class="image image3">Image 3</div>
+        <div class="image image4">Image 4</div>
+        <div class="image image5">Image 5</div>
+    </div>
+</body>
+</html>

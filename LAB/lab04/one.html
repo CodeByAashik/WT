@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            border:2px solid black;
+            text-align: center;
+            border-collapse:collapse;
+        }
+    </style>
+</head>
+<body>
+    <table class="one" border="1">
+        <caption>Example : Nested</caption>
+        <tr>
+            <th colspan="2" rowspan="2">CI</th>
+            <th rowspan="2">All Gender</th>
+            <th colspan="2">By Gender</th>
+        </tr>
+        <td>
+<table border="1" class="two">
+            <tr>
+            <th >Males</th>
+            <th>Females</th>
+        </tr>
+        <tr>
+            <td>9215694</td>
+            <td>921563838</td>
+        </tr>
+        </table>
+        </td>
+        
+
+        <tr>
+            <th>Rural</th>
+            <td>9215694</td>
+            <td>9215744</td>
+            <td colspan="2">0215694</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.internal{
+            color:red;
+            text-align:right;
+        }
+
+        h1{
+            text-align:center;
+            background-color:orange;
+            color:white;
+        }
+
+        hr{
+            color:blue;
+        }
+
+        p{
+            text-align:center;
+            text-decoration-line:underline overline;
+            text-decoration-color:black;
+        }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS table</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width:100%;
+            text-align:center;
+            caption-side: bottom;
+            border:1px solid blue;
+        }
+        th{
+            background-color:blue;
+            color:white;
+        }
+        th:hover{
+            color:rgb(54, 236, 90);
+        }
+
+        th,td{
+            padding:10px;
+            border-bottom:1px solid blue;
+        }
+
+        tr:nth-child(2n+1){
+            background-color:#f1f1f1;
+
+        }
+        tr{
+            transition: background-color 0.2s ease-out ,color 0.2s ease-out ;
+        }
+        tr:hover {
+            background-color: rgba(0, 0, 255, 0.4); /* blue with 40% opacity */
+            color: white;
+        }
+
+        tr:last-child{
+            border-bottom:10px solid blue;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>CSS Table</h1>
+    <table >
+        <caption>Students</caption>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>Qualification</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Aashik</td>
+            <td>Male</td>
+            <td>24</td>
+            <td>+2</td>
+        </tr>
+         <tr>
+            <td>1</td>
+            <td>Aashik</td>
+            <td>Male</td>
+            <td>24</td>
+            <td>+2</td>
+        </tr>
+         <tr>
+            <td>1</td>
+            <td>Aashik</td>
+            <td>Male</td>
+            <td>24</td>
+            <td>+2</td>
+        </tr>
+         <tr>
+            <td>1</td>
+            <td>Aashik</td>
+            <td>Male</td>
+            <td>24</td>
+            <td>+2</td>
+        </tr>
+         <tr>
+            <td>1</td>
+            <td>Aashik</td>
+            <td>Male</td>
+            <td>24</td>
+            <td>+2</td>
+        </tr>
+    </table>
+</body>
+</html>

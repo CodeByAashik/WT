@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-image: url(/college.jpg);
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-blend-mode:darken;
+            
+            
+            
+        }
+        .heading{
+            margin-top:4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .table-head{
+            width:100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        th,td{
+            padding:20px 40px;
+            text-align: center;
+
+        }
+
+        .pinkish{
+            background-color:rgba(255, 192, 203, 0.601);
+        }
+        #yellow{
+            background-color: rgba(255, 255, 0, 0.718);
+        }
+        .day{
+            background-color: rgba(255, 192, 203, 0.708);
+        }
+        .dsa{
+            background-color: rgba(128, 0, 128, 0.753);
+        }
+
+        .wt{
+            background-color: rgba(255, 255, 255, 0.71);
+        }
+        .break{
+            background-color: rgba(255, 0, 0, 0.737);
+        }
+        .java{
+            background-color: rgba(95, 158, 160, 0.741);
+        }
+        .sad{
+            background-color: rgba(255, 166, 0, 0.742);
+        }
+        .pns{
+            background-color: rgba(165, 42, 42, 0.705);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="heading">   
+            <h2><a href="https://www.ncit.edu.np">NCIT</a></h2>
+            <h3>DEPARTMENT OF IT</h3>
+            <h3>EFFECTIVE FROM : 01.07.2025</h3>
+        </div>
+        <div class="table-head">
+            <p>Semester 3</p>
+            <p>Class mentor: <a href="#">Er. Simanta Kasaju</a></p>
+        </div>
+        <div class="table-one">
+            <table border="1">
+                <tr class="pinkish">
+                    <th  id="yellow">Days/Periods</th>
+                    <th>
+                        <div class="serial">
+                            1
+                        </div>
+                        <div class="time">
+                            06:30-07:30
+                        </div>
+                    </th>
+                    <th>
+                        <div class="serial">
+                            2
+                        </div>
+                        <div class="time">
+                            07:30-08:30
+                        </div>
+                    </th>
+                    <th>
+                        <div class="serial">
+                            3
+                        </div>
+                        <div class="time">
+                            08:30-09:30
+                        </div>
+                    </th>
+                    <th>
+                        <div class="serial">
+                            4
+                        </div>
+                        <div class="time">
+                            09:30-10:30
+                        </div>
+                    </th>
+                    <th>
+                        <div class="serial">
+                            5
+                        </div>
+                        <div class="time">
+                            10:30-11:30
+                        </div>
+                    </th>
+                    <th>
+                        <div class="serial">
+                            6
+                        </div>
+                        <div class="time">
+                            11:30-12:30
+                        </div>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th class="day">Monday</th>
+                    <td class="wt">WEb Technology</td>
+                    <td class="dsa">DSA</td>
+                    <th class="break">Break</th>
+                    <td class="java">JAva</td>
+                    <td class="pns">Probability</td>
+                    <td class="sad">SAD</td>
+                </tr>
+
+                <tr>
+                    <th class="day">Tuesday</th>
+                    <td colspan="2" class="wt">WEb Technology</td> 
+                    <th class="break">Break</th>
+                    <td colspan="2" class="java">Java</td>
+                    <!-- <td>Probability</td> -->
+                    <td class="sad">SAD</td>
+                </tr>
+
+                <tr>
+                    <th class="day">Wednesday</th>
+                    <!-- <td>WEb Technology</td> -->
+                    <td colspan="2" class="dsa">DSA</td>
+                    <th class="break">Break</th>
+                    <!-- <td>JAva</td> -->
+                    <td colspan="2" class="pns">Probability</td>
+                    <td class="sad">SAD</td>
+                </tr>
+
+                <tr>
+                    <th class="day">Thursday</th>
+                    <!-- <td>WEb Technology</td> -->
+                    <td class="dsa" colspan="2">DSA</td>
+                    <th class="break" class="break">Break</th>
+                    <td class="wt" colspan="3">JAva/Web tech lab</td>
+                    <!-- <td>Probability</td>
+                    <td>SAD</td> -->
+                </tr>
+
+                <tr>
+                    <th class="day">Friday</th>
+                    <td class="wt" colspan="2">Extra-curriculum</td>
+                    <!-- <td class="dsa">DSA</td> -->
+                    <th class="break">Break</th>
+                    <td class="wt" colspan="3">DSA/Probability Lab</td>
+                    <!-- <td>Probability</td>
+                    <td>SAD</td> -->
+                </tr>
+
+                <tr>
+                    <th  class="day">Saturday</th>
+                    <td class="wt">WEb Technology</td>
+                    <td class="dsa">DSA</td>
+                    <th class="break">Break</th>
+                    <td class="java">JAva</td>
+                    <td class="pns">Probability</td>
+                    <td class="sad">SAD</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

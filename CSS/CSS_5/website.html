@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .head{
+            /* height:2rem; */
+            padding:30px;
+            /* background-color: #e98282; */
+            background:linear-gradient(to right,black,navy,crimson,orange);
+            color:white;
+            font-size: 30px;
+            font-weight: bolder;
+            text-align: center;
+        }
+        .foot{
+            background:linear-gradient(to right,black,navy,crimson,orange);
+            color:white;
+            padding:20px;
+            position:relative;
+            text-align: center;
+            font-size: 10px;
+            font-weight:bold;
+            letter-spacing: 5px;
+            word-spacing: 10px;
+        }
+        .body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height:100%; */
+
+        }
+        .left,.right{
+            height:200px;
+            padding:100px;
+            border:2px solid black;
+            width:25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .mid{
+            width:50%;
+            padding:100px;
+            height:200px;
+            border:2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        nav{
+            background-color: black;
+            color:white;
+            font-size:19px;
+            display:flex;
+            height:3rem;
+
+        }
+        a{
+            color:white;
+            text-decoration: none;
+        }
+        input{
+            border-radius: 24px;
+            float:right;
+            margin:5px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        Heading goes here
+    </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Exam</a>
+        <a href="#">Courses</a>
+        <input type="text" name="" placeholder="search" id="">
+    </nav>
+    <div class="body">
+        <div class="left">left</div>
+        <div class="mid">middle</div>
+        <div class="right">right</div>
+    </div>
+    <div class="foot">
+        This is footer &copy
+    </div>
+</body>
+</html>

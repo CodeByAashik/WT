@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p::first-line{
+            color:blue;
+        } */
+         p::first-letter{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 30px;
+         }
+          p::selection{
+            background-color: black;
+            color:white;
+          }
+          ::marker{
+            color:blue;
+          }
+
+          p::before{
+            content: 'Aashik ';
+            color:red;
+          }
+          p::after{
+            content: '';
+            background-image:url(https://media2.giphy.com/media/CUMXiHI4b0z8llC7aA/200w.gif?cid=6c09b952vkal1t1qumri246zynzwqf4oktv1hpd2gf3pfhhs&ep=v1_gifs_search&rid=200w.gif&ct=g);
+            display:block;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100px;
+            width:100px;
+
+
+           
+
+
+          }
+
+           /* attribute-selector */
+
+           li::before{
+            content: ' ➤ ';
+            
+           }
+
+           li{
+            list-style:none;
+           }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quidem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corporis accusamus corrupti qui rem eius ex temporibus eligendi non deleniti.
+    </p>
+    <ul>
+        <li>Apple</li>
+        <li>Ball</li>
+        <li>Cat</li>
+        <li>Dog</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis cum fuga, velit quam earum enim et, quidem quibusdam cupiditate magnam illum, maxime sed? Vel minus delectus consequatur sed cupiditate, voluptate iste, quasi error libero autem nam, ipsum earum vitae magni!</p> <br>
+
+    <label for=""></label>
+</body>
+</html>

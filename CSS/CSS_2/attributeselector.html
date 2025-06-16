@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [title]{
+            color:yellow;
+        }
+        /* anything starting with abc will be selected */
+        [title|='abc']{ 
+            color:blue;
+        }
+        [title='abc']{ 
+            color:green;
+        }
+        /* ending with z */
+        [title$='z']{ 
+            color:violet;
+        }
+        /* having f anywhere */
+        [title*='f']{ 
+            color:purple;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="#abc">faccebook</a>
+    <p title="a-b-c">paragraph</p>
+    <h1 title="abc">head</h1>
+    <h1 title="abcde">head</h1>
+    <h1 title="abc-de">head</h1>
+    <h1 title="buzz">head</h1>
+    <h1 title="buzz">head</h1>
+    <h1 title="fan">head</h1>
+</body>
+</html>
