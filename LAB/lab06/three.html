@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: blue;
+        }
+
+        .container{
+            position: fixed;
+            /* background-image: url(/college.jpg); */
+            height: 100vh;
+            width: 100vw;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: scroll;
+        }
+        .container::after{
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to left , rgba(0, 0, 0, 0.379),rgba(0, 0, 0, 0.856));
+            z-index: -998;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            
+        }
+        .a , .b{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.082);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            /* height: 400px; */
+        }
+
+        .b{
+            height: 500px;
+        }
+
+        .a-img {
+            /* height: 100%; */
+            /* width: auto; */
+            border-radius: 60px;
+            width: 500px;
+        }
+
+        .a-p{
+            height: 100%;
+            width: 400px;
+            text-align: center;
+            position: relative;
+            color: white;
+        }
+        
+        
+        .b-img{
+            width: 500px;
+            border-radius: 60px;
+
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/college.jpg"  alt="" class="container">
+        <div class="a">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlsJd3UKGTXrtQdNygj3y_8tBeZOGOC0evjQ&s" alt="" class="a-img">
+            
+            <p class="a-p">
+                Founded in 2001, NCIT offers undergraduate and graduate programs in engineering, IT, business, and computer science 
+            </p>
+
+        </div>
+        <h1 align="center" style="color: white; font-size: 70px;">Welcome To NCIT</h1>
+        <div class="b">
+            <img src="https://media.istockphoto.com/id/1351445530/photo/african-student-sitting-in-classroom.jpg?s=612x612&w=0&k=20&c=1ICaZ03iFLzDmxfBkfDkmBGSgj1SDEpsM3eSDgB1KBk=" alt="" class="b-img">
+            <p class="b-p">
+                Affiliated with Pokhara University, and its engineering degrees are recognized by the Nepal Engineering Council
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

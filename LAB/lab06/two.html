@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* universal selector*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* class selector  */
+        .first{
+            font-size: 40px;
+            color: blue;
+        }
+        /* group selector  */
+        .second , .third{
+            background-color: red;
+        }
+        /* attribute selecctor  */
+        input[disabled]{
+            background-color: orange;
+        }
+        /* id selector */
+        #thirda{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="first">
+        this is heading one
+    </h1>
+    <h1 class="second">
+        this is heading second
+    </h1>
+    <h1 class="third" id="thirda">
+        this is heading third
+    </h1>
+    <input type="text" name="" value="hello" disabled id="">
+</body>
+</html>
