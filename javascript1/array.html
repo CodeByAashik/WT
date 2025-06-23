@@ -87,12 +87,64 @@
         // document.writeln(a);
         
         
-        a=[1,2,3,4,5,'Ram',true,20.37];
+        // a=[1,2,3,4,5,'Ram',true,20.37];
         //concat
         // b=[22,33];
         // c=['Ram','Hari'];
         // document.writeln(a.concat('abcd','efgh'));
         // document.writeln(a.concat(b,c));
+        
+
+        //indexof
+        // document.writeln(a.indexOf(20.37));
+
+        //delete
+        // delete a[3];
+        // document.writeln(a);
+
+
+        //flat
+        // b=[[1,2],[7,9],[90,91]];
+        // document.writeln(b.flat());
+
+
+        //sort
+        // function compare(a,b){
+        //     return a-b;
+        // }
+        // a=[1,111,11,222,2,22,33,89,899,98,99,9,4,444,443];
+        // sum=0;
+        // for(key of a){
+        //     sum+=key;
+        // }
+        // document.writeln(`Sum is ${sum}`);
+        // document.writeln('<br>');
+        // document.writeln(`Average is ${sum/a.length}`);
+        // document.writeln(a.sort(compare));
+
+        function color1(){
+            document.getElementById('a').src='car1.png';
+        }
+        function color2(){
+            document.getElementById('a').src='car2.png';
+        }
+        function color3(){
+            document.getElementById('a').src='car3.png';
+        }
+        function color4(){
+            document.getElementById('a').src='car4.png';
+        }
+
+
+
     </script>
+
+    <img src="car.jpeg" height="200px" width="400px" id="a" alt="">
+    <br>
+    <button onclick="color1()">color1</button>
+    <button onclick="color2()">color2</button>
+    <button onclick="color3()">color3</button>
+    <button onclick="color4()">color4</button>
+
 </body>
 </html>
