@@ -44,6 +44,15 @@
             background-color: yellow;
             opacity: 0.2;
         }
+        .glow {
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 5px 2px white; }
+            50% { box-shadow: 0 0 20px 10px white; }
+            100% { box-shadow: 0 0 5px 2px white; }
+        }
         button {
             margin: 5px;
             padding: 10px 20px;
@@ -59,6 +68,7 @@
             transform: scale(1.1);
         }
 
+
     </style>
 </head>
 <body>
@@ -71,6 +81,7 @@
         <button onclick="red()" class="red">red</button>
         <button onclick="green()" class="green">green</button>
         <button onclick="yellow()" class="yellow">yellow</button>
+
     </div>
     <script>
         function red(){
