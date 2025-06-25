@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            height: 400px;
+            width: 200px;
+            background-color: blue;
+
+        }
+        #a{
+            height: 100px;
+            width: 200px;
+            color: blue;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="a" onclick="ab();"></div> -->
+    <!-- <div class="a" ondblclick="ab();"></div> -->
+    <!-- <div class="a" onmouseenter="ab();"></div> -->
+    <!-- <div class="a" onmouseleave="ab();"></div> -->
+    <!-- <div class="a" oncontextmenu="ab();"></div> -->
+    <!-- <div class="a" onmouseover="ab();"></div> -->
+    <!-- <div class="a" onmousemove="ab();"></div> -->
+    <!-- <div class="a" onmousedown="ab();"></div> -->
+    <!-- <div class="a" onmouseup="ab();"></div> -->
+    <!-- <div class="a" onmouseout="ab();"></div> -->
+
+
+    <div id="a" onmouseleave="ab()" onmouseenter="ac()"></div>
+    <script>
+        function ab(){
+            // alert('Mouse Event');
+            document.getElementById('a').style.backgroundColor='red';
+        }
+
+        function ac(){
+            document.getElementById('a').style.backgroundColor='orange';
+        }
+    </script>
+</body>
+</html>

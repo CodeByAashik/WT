@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            text-align: center ;
+        }
+        #d{
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding:5px 15px;
+        }
+        #l{
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            padding:5px 15px;
+
+        }
+    </style>
+</head>
+<body>
+    <button id="d" onclick="theme('light');">Dark</button>
+    <h1 id="h" align="center">Introduction to JS</h1>
+    <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptates culpa quisquam, obcaecati illum aspernatur, hic quaerat, incidunt doloribus optio omnis repudiandae ea dolorem. Corrupti, nobis. Tempora deleniti dignissimos eius? Quidem exercitationem, atque, hic iste est reprehenderit eveniet minus assumenda nulla repudiandae eligendi neque! Voluptatibus rerum corporis ratione odit provident?</p>
+
+    <script>
+        let p= document.getElementById('p');
+        let h= document.getElementById('h');
+
+        function theme(theme) {
+            if (document.body.style.backgroundColor!="black") {
+                document.body.style.backgroundColor = 'black';
+                document.getElementById('d').style.backgroundColor = 'white';
+                document.getElementById('d').style.color = 'black';
+                document.getElementById('h').style.color='white';
+                document.getElementById('p').style.color='white';
+            } else {
+                document.body.style.backgroundColor = 'white';
+                document.getElementById('d').style.backgroundColor = 'black';
+                document.getElementById('d').style.color = 'white';
+                document.getElementById('h').style.color='black';
+                document.getElementById('p').style.color='black';
+            }
+        }
+    </script>
+</body>
+</html>

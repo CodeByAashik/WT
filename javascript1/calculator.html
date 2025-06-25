@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 5px 15px;
+        }
+        td button{
+            height: 30px;
+            width: 45px;
+        }
+        td:nth-child(4) button{
+            color: white;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" name="" id="result"></td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="f('7');">7</button>
+            </td>
+            <td>
+                <button onclick="f('8');">8</button>
+            </td>
+            <td>
+                <button onclick="f('9');">9</button>
+            </td>
+            <td>
+                <button onclick="f('*');">*</button>
+            </td>
+           
+        </tr>
+        <tr>
+            <td>
+                <button onclick="f('4');">4</button>
+            </td>
+            <td>
+                <button onclick="f('5');">5</button>
+            </td>
+            <td>
+                <button onclick="f('6');">6</button>
+            </td>
+            <td>
+                <button onclick="f('/');">/</button>
+            </td>
+           
+        </tr>
+        <!-- <tr>
+            <td>
+                <button onclick="f('1')">1</button>
+            </td>
+            <td>
+                <button onclick="f('2')">2</button>
+            </td>
+            <td>
+                <button onclick="f('3')">3</button>
+            </td>
+            <td>
+                <button onclick="f('+')">+</button>
+            </td>
+            
+           
+        </tr> -->
+        <tr>
+            <td>
+                <button onclick="f('1');">1</button>
+            </td>
+            <td>
+                <button onclick="f('2');">2</button>
+            </td>
+            <td>
+                <button onclick="f('3');">3</button>
+            </td>
+            <td>
+                <button onclick="f('+');">+</button>
+            </td>
+           
+        </tr>
+        <tr>
+            <td>
+                <button onclick="f('0');">0</button>
+            </td>
+            <td>
+                <button onclick="f('.');">.</button>
+            </td>
+            <td>
+                <button onclick="calc();">=</button>
+            </td>
+            <td>
+                <button onclick="f('-');">-</button>
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan="4">
+                <button onclick="clear();" style="background-color: red; color: white; width: 100%;">Clear</button>
+            </td>
+        </tr>
+        
+    </table>
+    <script>
+        let a= document.getElementById('result');
+        // let value = '';
+        function f(value){
+            a.value += value;
+        }
+        function calc(){
+            let result = eval(a.value);
+            a.value=result;
+            
+        }
+        function clear(){
+            a.value='';
+        }
+    </script>
+</body>
+</html>
