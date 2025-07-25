@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="return validateForm(event);">
+        NAme: 
+        <input type="text" name="" id="name"> <br>
+        Email : 
+        <input type="email" name="" id="email"> <br>
+        phone number : 
+        <input type="text" name="" id="phoneno"> <br>
+        <input type="submit" value="Signup"> <br>
+        <div id="mess"></div>
+    </form>
+    <script>
+        function validateForm(e){
+            e.preventDefault();
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let phoneno = document.getElementById("phoneno").value;
+            let mess = document.getElementById('mess');
+
+            let namePattern = /^[a-zA-Z ]{2,}$/;
+            let emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+            let phonePattern = /^[0-9]{10}$/;
+
+            if (!name.match(namePattern)) {
+                mess.innerHTML = "❌ Invalid name format!";
+                return false;
+            }
+
+            if (!email.match(emailPattern)) {
+                mess.innerHTML = "❌ Invalid email format!";
+                return false;
+            }
+
+            if (!phoneno.match(phonePattern)) {
+                mess.innerHTML = "❌ Phone number must be 10 digits!";
+                return false;
+            }
+
+            mess.innerHTML = "<div class='success'>Form submitted successfully!</div>";
+            return true;
+        }
+    </script>
+</body>
+</html>
