@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>This is just a title</title>
+</head>
+<body>
+<form method="POST" onsubmit="return valid()">
+Name:
+<input type="text" id="name" name="Name"><br>
+Email:
+<input type="email" id="email" name="Email"><br>
+Password:
+<input type="password" id="pw" name="Password"><br>
+Confirm Password : 
+<input type="password" id="cpw" name="Cpassword"><br>
+<input type="submit" value="log in ">
+</form>
+<script>
+function valid(){
+let name = document.getElementById("name").value;
+let email = document.getElementById("email").value;
+let password = document.getElementById("pw").value;
+let cpassword =document.getElementById("cpw").value;
+
+let ppat=/^[a-zA-Z0-9\.\-_]+[@][a-zA-Z0-9]+\.[a-zA-Z0-9]{2,}$/;
+
+if(!ppat.test(password)){
+ alert("The pattern for password didn't match!");
+return false;
+}
+
+if(password!=cpassword){
+alert("mismatched password and confirm password!");
+return false;
+}
+alert("login successful!");
+return true;
+}
+
+</script>
+</body>
+</html>
