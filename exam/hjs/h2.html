@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>just a form validation code</title>
+  </head>
+  <body>
+    <form method="POST" onsubmit="return valid();">
+      Name : 
+      <input type="text" id="n"><span id="nerr"></span><br>
+      Email : 
+        <input type="text" id="e"><span id="eerr"></span><br>
+      <input type="submit" value="login">
+     </form>
+   <script>      
+            function valid(){
+            let name=document.getElementById("n").value;
+            let nameerr=document.getElementById("nerr");
+            let email = document.getElementById("e").value;
+            let emailerr = document.getElementById("eerr");
+
+            let ereg=/^[a-zA-Z0-9\d\.\-_]+[@][a-zA-Z0-9\.\-]+\.[a-z]{2,}$/;
+            let flag=1;
+
+            if(name === ""){
+            nameerr.innerHTML="name is empty";
+            flag=0;
+            }else if(name.length<8){
+            nameerr.innerHTML="Name is too short";
+            flag=0;
+            }else{
+            nameerr.innerHTML
+            flag=1;
+            } 
+
+            if(email === " "){
+            emailerr.innerHTML = "email ta khali xodnai milena ni!";
+            flag =0;
+            }if(email.search(ereg)<0){
+            emailerr.innerHTML = "email pattern milena bro!";
+            flag=0;
+            }else{
+            emailerr.innerHTML = "la success vayo ";
+            flag=1;
+            
+            }
+
+            if(flag){
+            return true;}else{
+            return false;}
+            }
+   </script>
+   </body>
+   </html>
