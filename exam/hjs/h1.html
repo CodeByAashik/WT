@@ -27,35 +27,33 @@
 </style>
 </head>
 <body>
+    <h2>Dynamic Image Change</h2>
+    <div id="image-container">
+        <img id="dynamic-img" src="https://picsum.photos/id/1015/300/400" alt="Image">
+    </div>
+    <button id="next-image">Next Image</button>
 
-<h2>Dynamic Image Change</h2>
-<div id="image-container">
-  <img id="dynamic-img" src="https://picsum.photos/id/1015/300/400" alt="Image">
-</div>
-<button id="next-image">Next Image</button>
+    <script>
+        const images = [
+        'https://picsum.photos/id/1015/300/400',
+        'https://picsum.photos/id/1016/300/400',
+        'https://picsum.photos/id/1018/300/400',
+        'https://picsum.photos/id/1020/300/400',
+        'https://picsum.photos/id/1024/300/400'
+        ];
 
-<script>
-const images = [
-  'https://picsum.photos/id/1015/300/400',
-  'https://picsum.photos/id/1016/300/400',
-  'https://picsum.photos/id/1018/300/400',
-  'https://picsum.photos/id/1020/300/400',
-  'https://picsum.photos/id/1024/300/400'
-];
+        let index = 0;
+        const imgElement = document.getElementById('dynamic-img');
+        const button = document.getElementById('next-image');
 
-let index = 0;
-const imgElement = document.getElementById('dynamic-img');
-const button = document.getElementById('next-image');
-
-button.addEventListener('click', () => {
-  index = (index + 1) % images.length; // loop back to first
-  imgElement.style.opacity = 0;        // fade out
-  setTimeout(() => {
-    imgElement.src = images[index];    // change image
-    imgElement.style.opacity = 1;      // fade in
-  }, 200);
-});
-</script>
-
+        button.addEventListener('click', () => {
+        index = (index + 1) % images.length; // loop back to first
+        imgElement.style.opacity = 0;        // fade out
+        setTimeout(() => {
+            imgElement.src = images[index];    // change image
+            imgElement.style.opacity = 1;      // fade in
+        }, 200);
+        });
+    </script>
 </body>
 </html>
