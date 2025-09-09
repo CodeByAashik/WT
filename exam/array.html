@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>
-This is array methods 
-</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-<script>
-let arr=[123,12.45,"aashik",{surname : "Thakur"}];
-console.log(arr.length);
-</script>
+    <script>
+        let p = Number(prompt("enter principal"));
+        let t = Number(prompt("enter time"));
+        let r = Number(prompt("enter rate"));
+        let interest = (p*t*r)/100;
+        alert(`Principal:${p} Rate ${r} Time ${t} Interest : ${interest}`);
+    </script>
 </body>
 </html>

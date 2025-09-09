@@ -17,6 +17,8 @@ function valid(){
         flag=1; 
     }
 
+    
+
     if(e===''||e==='null'){
        ee.innerHTML="Email cant be empty!";
        flag=0; 
