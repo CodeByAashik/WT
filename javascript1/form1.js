@@ -16,7 +16,6 @@ function valid(){
         ne.innerHTML="Success!!!!";
         flag=1; 
     }
-
     
 
     if(e===''||e==='null'){
