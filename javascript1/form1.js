@@ -16,7 +16,7 @@ function valid(){
         ne.innerHTML="Success!!!!";
         flag=1; 
     }
-    
+
 
     if(e===''||e==='null'){
        ee.innerHTML="Email cant be empty!";
@@ -24,7 +24,6 @@ function valid(){
     }else if(e.search(epat)<0){
         ee.innerHTML="Email ko patetern milena";
         flag=0;
-
     }else{
         ee.innerHTML="Success";
         flag=1;
