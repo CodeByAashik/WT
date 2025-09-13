@@ -29,7 +29,6 @@ function valid(){
         flag=1;
     }
 
-    
     if(flag){
         return true;
     }else{
